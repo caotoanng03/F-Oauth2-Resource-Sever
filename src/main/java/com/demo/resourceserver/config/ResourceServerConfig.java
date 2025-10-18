@@ -45,7 +45,7 @@ public class ResourceServerConfig {
     public JwtAuthenticationConverter jwtAuthenticationConverter() {
         JwtAuthenticationConverter converter = new JwtAuthenticationConverter();
         JwtGrantedAuthoritiesConverter authoritiesConverter = new JwtGrantedAuthoritiesConverter();
-        authoritiesConverter.setAuthoritiesClaimName("roles");
+        authoritiesConverter.setAuthoritiesClaimName("role");
 
         // Set prefix (ROLE_ is standard for hasRole())
         authoritiesConverter.setAuthorityPrefix("ROLE_");
